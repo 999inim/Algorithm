@@ -14,13 +14,10 @@ class Solution {
         // 1. 각 학생들의 맞춘 문제 수 구하기
         for(int i =0; i < answers.length; i++) {
             sol = answers[i];
-            //System.out.println(sol);
             if (sol == s1.charAt(i%5)-48) result[0]++;
             if (sol == s2.charAt(i%8)-48) result[1]++;
             if (sol == s3.charAt(i%10)-48) result[2]++;
         }
-        
-        System.out.println(result[0] + " " + result[1] +" " + result[2]);
         
         // 2. 세 학생의 점수를 비교하여 최대값 구하기
         ArrayList<Integer> list = new ArrayList<Integer>();

@@ -1,5 +1,6 @@
 import java.util.*;
 
+// https://programmers.co.kr/learn/courses/30/lessons/42626
 class Solution {
     public int solution(int[] scoville, int K) {
         int answer = 0;

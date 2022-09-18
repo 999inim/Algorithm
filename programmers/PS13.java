@@ -12,12 +12,12 @@ class Solution {
             int curTruck = truck_weights[i];
             
             while(true) {
-                if (queue.size() == bridge_length) {
+                if (queue.size() == bridge_length) { //다리 길이
                     truckSum -= queue.poll();
-                } else if (curTruck + truckSum > weight) {
+                } else if (curTruck + truckSum > weight) { //총 트럭무게
                     totalTime += 1;
                     queue.add(0);
-                } else { // 올라갈 수 있을때
+                } else { //올라갈 수 있을때
                     totalTime += 1;
                     truckSum += curTruck;
                     queue.add(curTruck);
